@@ -1,0 +1,15 @@
+{
+	"name": "RS-ADFS",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3edbf147-6d56-41cc-b40b-65bef0670ede",
+		"tenantId": "dc734e20-865c-4cec-a3ca-220431d77660"
+	}
+}

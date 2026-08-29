@@ -1,0 +1,104 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "sourcefiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Invoice_Number",
+				"type": "String"
+			},
+			{
+				"name": "Vendor_ID",
+				"type": "String"
+			},
+			{
+				"name": "Vendor_Name",
+				"type": "String"
+			},
+			{
+				"name": "PO_Number",
+				"type": "String"
+			},
+			{
+				"name": "Invoice_Date",
+				"type": "String"
+			},
+			{
+				"name": "Due_Date",
+				"type": "String"
+			},
+			{
+				"name": "Invoice_Amount",
+				"type": "String"
+			},
+			{
+				"name": "Tax_Amount",
+				"type": "String"
+			},
+			{
+				"name": "Total_Amount",
+				"type": "String"
+			},
+			{
+				"name": "Currency",
+				"type": "String"
+			},
+			{
+				"name": "Payment_Status",
+				"type": "String"
+			},
+			{
+				"name": "Invoice_Status",
+				"type": "String"
+			},
+			{
+				"name": "Payment_Terms",
+				"type": "String"
+			},
+			{
+				"name": "Cost_Center",
+				"type": "String"
+			},
+			{
+				"name": "Business_Unit",
+				"type": "String"
+			},
+			{
+				"name": "Legal_Entity",
+				"type": "String"
+			},
+			{
+				"name": "Invoice_Type",
+				"type": "String"
+			},
+			{
+				"name": "GL_Account",
+				"type": "String"
+			},
+			{
+				"name": "Buyer_Name",
+				"type": "String"
+			},
+			{
+				"name": "Created_By",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
